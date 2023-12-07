@@ -48,6 +48,21 @@
             background-color: rgb(185, 19, 19);
             color: white;
         }
+     
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-label {
+            margin-left: 10px;
+            font-size: 25px;
+        }
+
+        .checkbx {
+            width: 30px;
+        }
     </style>
 </head>
 <body>
@@ -55,7 +70,16 @@
         <form class="form01">
             <label >Número telefônico:</label> <br>
             <input id="number" autofocus type="text"> <br>
-            <input id="enviar" type="submit" value="Enviar">
+            <input id="enviar" type="submit" value="Enviar"> <br>
+            
+            <div class="checkbox-container">
+                <input id="checkboxitem" class="checkbx" type="checkbox">
+                <label class="checkbox-label" for="atualizarCheckbox">Executar a cada input</label>
+            </div>
+            <div class="checkbox-container">
+                <input id="checkboxitem2" class="checkbx" type="checkbox">
+                <label class="checkbox-label" for="atualizarCheckbox">Limpar ao executar</label>
+            </div>
         </form>
     </main>
 
